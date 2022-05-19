@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #EAEAEA;
 }
 @media (min-width: 992px) {
   .header {
@@ -66,7 +67,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EAEAEA;
 }
 @media (min-width: 992px) {
   .header__location {
