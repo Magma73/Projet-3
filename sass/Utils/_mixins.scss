@@ -1,0 +1,19 @@
+
+
+/*** MIXIN MEDIA QUERIES***/
+@mixin desktop {
+    @media (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+@mixin tablette {
+    @media (min-width: map-get($breakpoints, tablette)){
+        @content;
+    }
+}
+@mixin screenLarge {
+    @media (min-width: map-get($breakpoints, xlarge)){
+        @content;
+    }
+}
+

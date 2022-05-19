@@ -1,5 +1,7 @@
+/***COLORS****/
+/*** MEDIA QUERIES***/
+/*** MIXIN MEDIA QUERIES***/
 /*@import "./utils/functions";
-@import "./utils/mixins";
 @import "./utils/extensions";
 @import "./base/base";
 @import "./base/typography";
@@ -36,9 +38,7 @@ body {
 }
 @media (min-width: 992px) {
   .header {
-    display: flex;
     flex-direction: row;
-    align-items: center;
   }
 }
 .header__image {

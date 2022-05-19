@@ -1,6 +1,14 @@
+/***COLORS****/
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-third: #99E2D0;
 $color-white: white;
 $color-grey: #EAEAEA;
 
+/*** MEDIA QUERIES***/
+$breakpoints: (
+    tablette:768px,
+    desktop: 992px,
+    xlarge: 1200px
+);
