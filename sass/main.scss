@@ -97,6 +97,30 @@ body{
     }   
 }
 
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 40px;
 
+    &__heading{
+        &--padding{
+        padding-right:10px;
+        }
+        &--center{
+        text-align: center;
+        }
+    }
 
+    &__byline--center{
+        text-align: center;
+    }
 
+    &__button{
+        padding:20px 0;
+    }
+}
+
+.btn{
+    
+}

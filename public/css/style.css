@@ -94,4 +94,23 @@ body {
   opacity: 1;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+}
+.section__heading--padding {
+  padding-right: 10px;
+}
+.section__heading--center {
+  text-align: center;
+}
+.section__byline--center {
+  text-align: center;
+}
+.section__button {
+  padding: 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
