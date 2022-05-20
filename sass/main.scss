@@ -28,6 +28,10 @@
 /**** BODY ***/
 body{
     font-family: 'Roboto', sans-serif;
+    @include screenLarge{
+        max-width:1920px;
+        margin:auto;
+    }
 }
 // a{
 //     display:flex;
@@ -97,23 +101,17 @@ body{
     }   
 }
 
-.section{
+.reserve{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding:20px 40px;
+    text-align: center;
+    background-color:#f6f6f6;
 
-    &__heading{
-        &--padding{
-        padding-right:10px;
-        }
-        &--center{
-        text-align: center;
-        }
-    }
-
-    &__byline--center{
-        text-align: center;
+    &__byline{
+        font-weight: lighter;
+        font-size:18px;
     }
 
     &__button{
@@ -121,6 +119,22 @@ body{
     }
 }
 
-.btn{
-    
+.btn-main{
+    padding:15px 20px;
+    border-radius: 30px;
+    border:none;
+    color:$color-white;
+    background: linear-gradient( $color-secondary, $color-primary);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0,0.5);
+}
+
+.menu{
+    &__heading{
+        padding:10px 0;
+    }
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
 }
