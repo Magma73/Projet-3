@@ -24,6 +24,9 @@
     <title>OhMyFood</title>
 </head>
 <body>
+
+    <!-- HEADER -->
+
     <header class="header">
         <div class="header__image">
             <a href="#"><img src="./assets/images/logo/ohmyfood.png" alt="Logo OhMyFood"></a>
@@ -38,7 +41,12 @@
 
     </header>
 
+
+    <!-- MAIN -->
+
     <main>
+
+        <!-- SECTION 1 : "Réservation" -->
 
         <section class="reserve">
             <h1 class="reserve__heading">Réservez le menu qui vous convient</h1>
@@ -48,13 +56,32 @@
                 <button class="btn-main">Explorer nos restaurants</button>
             </div>
         </section>
+        
+        <!-- SECTION 2 : "Fonctionnement" -->
 
         <section class="menu">
             <h2 class="menu__heading">Fonctionnement</h2>
             <nav class="nav">
-                <li class="nav__link"><button class="nav__btn"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button></li>
-                <li class="nav__link"><button class="nav__btn"><i class="fas fa-bars"></i>Composez votre menu</button></li>
-                <li class="nav__link"><button class="nav__btn"><i class="fas fa-store"></i>Dégustez un restaurant</button></li>
+                <ul>
+                    <li class="nav__link">
+                        <button class="nav__btn">
+                            <span class="nav__icon"><i class="fas fa-mobile-alt"></i></span>
+                            Choisissez un restaurant
+                        </button>
+                    </li>
+                    <li class="nav__link">
+                        <button class="nav__btn">
+                            <span class="nav__icon"><i class="fas fa-list-ul"></i></span>
+                            Composez votre menu
+                        </button>
+                    </li>
+                    <li class="nav__link">
+                        <button class="nav__btn">
+                            <span class="nav__icon"><i class="fas fa-store"></i></span>
+                            Dégustez un restaurant
+                        </button>
+                    </li>
+                </ul>
             </nav>
 
 
