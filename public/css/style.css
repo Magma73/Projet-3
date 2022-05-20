@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***COLORS****/
 /*** MEDIA QUERIES***/
 /*** MIXIN MEDIA QUERIES***/
@@ -100,6 +101,7 @@ body {
   opacity: 1;
 }
 
+/**** SECTION 1 : "RÉSERVATION" ***/
 .reserve {
   display: flex;
   flex-direction: column;
@@ -118,6 +120,7 @@ body {
 
 .btn-main {
   padding: 15px 20px;
+  font-weight: 400;
   border-radius: 30px;
   border: none;
   color: white;
@@ -125,13 +128,33 @@ body {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.menu__heading {
-  padding: 10px 0;
+/**** SECTION 2 : "FONCTIONNEMENT" ***/
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
+  padding: 20px 0px;
+  list-style: none;
+}
+.nav__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  border: none;
+  border-radius: 21px;
+  padding: 25px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: black;
+  background-color: #f6f6f6;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=style.css.map */
