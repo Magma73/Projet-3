@@ -3,9 +3,43 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-third: #99E2D0;
+
 $color-white: white;
-$color-grey: #EAEAEA;
-$color-dark:black;
+
+$color-bg-light:#f6f6f6;
+$color-bg-darker: #EAEAEA;
+
+
+$color-bg-icon:#7E7E7E;
+
+
+$color-shadow: black;
+
+
+
+/*** CONTENT ***/
+
+// $contents: (
+//     content:"1",
+//     content: "2",
+//     content:"3"
+// );
+
+
+// @each $content, $number in $contents {
+//     .nav__btn::before--#{$content} {
+//         content:$number;
+//         font-size:0.9em;
+//         font-weight:400;
+//         position:relative;
+//         right:30px;
+//         padding:3px 7px;
+//         border-radius:50%;
+//         background-color:$color-primary;
+//         color:$color-white;
+//     }
+// }
+
 
 /*** MEDIA QUERIES***/
 $breakpoints: (

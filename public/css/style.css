@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /***COLORS****/
+/*** CONTENT ***/
 /*** MEDIA QUERIES***/
 /*** MIXIN MEDIA QUERIES***/
 /*@import "./utils/functions";
@@ -180,9 +181,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-.nav__icon > i {
-  color: #7E7E7E;
 }
 
 /*# sourceMappingURL=style.css.map */
