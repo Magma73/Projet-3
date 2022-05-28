@@ -204,6 +204,11 @@ body{
         display: flex;
         flex-direction: column;
         padding:12px 0;
+            @include tablette{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
     }
 }
 .card{
@@ -212,6 +217,14 @@ body{
     border-radius: 17px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0,0.15);
     margin:13px 0;
+    @include tablette{
+        flex:33%;
+        margin:10px;
+    }
+    @include desktop{
+        flex:15%;
+        margin:15px;
+    }
     &__img{
         display:flex;
         flex-direction: column; 
@@ -221,6 +234,9 @@ body{
             border-radius: 17px 17px 0 0;
             max-height:177px;
             object-position: 50% 65%;
+            @include tablette{
+                height:177px;
+            }
         }
     }
     &__label{

@@ -208,6 +208,13 @@ body {
   flex-direction: column;
   padding: 12px 0;
 }
+@media (min-width: 768px) {
+  .restaurant__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 .card {
   display: flex;
@@ -215,6 +222,18 @@ body {
   border-radius: 17px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
   margin: 13px 0;
+}
+@media (min-width: 768px) {
+  .card {
+    flex: 33%;
+    margin: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    flex: 15%;
+    margin: 15px;
+  }
 }
 .card__img {
   display: flex;
@@ -226,6 +245,11 @@ body {
   border-radius: 17px 17px 0 0;
   max-height: 177px;
   object-position: 50% 65%;
+}
+@media (min-width: 768px) {
+  .card__img > img {
+    height: 177px;
+  }
 }
 .card__label {
   position: absolute;
