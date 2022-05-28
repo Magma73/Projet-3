@@ -297,6 +297,18 @@ a {
   background-color: #353535;
   padding: 10px 20px;
 }
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 .footer__title {
   padding: 12px 0;
   font-family: "Shrikhand";
@@ -308,10 +320,27 @@ a {
   flex-direction: column;
   list-style: none;
 }
+@media (min-width: 768px) {
+  .footer__ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .footer__ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .footer__link {
   display: flex;
   flex-direction: row;
   padding: 5px 0;
+}
+@media (min-width: 992px) {
+  .footer__link {
+    padding-left: 20px;
+  }
 }
 .footer__icon {
   font-size: 0.8rem;

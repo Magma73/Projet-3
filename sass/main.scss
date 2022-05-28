@@ -284,6 +284,14 @@ a{
     color:$color-white;
     background-color: $color-bg-footer;
     padding: 10px 20px;
+        @include tablette{
+            padding: 20px;
+        }
+        @include desktop{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        }
     &__title{
         padding:12px 0;
         font-family:"Shrikhand";
@@ -294,11 +302,22 @@ a{
         display: flex;
         flex-direction: column;
         list-style: none;
+        @include tablette{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
     &__link{
         display:flex;
         flex-direction:row;
         padding:5px 0;
+        @include desktop{
+            padding-left: 20px;
+        }
     }
     &__icon{
         font-size:0.8rem;
