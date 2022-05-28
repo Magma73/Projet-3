@@ -39,6 +39,12 @@ body {
   }
 }
 
+/**** GLOBAL ***/
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /**** HEADER ***/
 .header {
   display: flex;
@@ -281,6 +287,35 @@ body {
 .card__icon > i {
   font-size: 1.5rem;
   margin: 5px;
+}
+
+/**** SECTION 4 : FOOTER ***/
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #353535;
+  padding: 10px 20px;
+}
+.footer__title {
+  padding: 12px 0;
+  font-family: "Shrikhand";
+  font-weight: normal;
+  font-size: 20px;
+}
+.footer__ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+.footer__icon {
+  font-size: 0.8rem;
+  padding-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
