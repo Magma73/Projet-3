@@ -2,6 +2,7 @@
 /***COLORS****/
 /*** CONTENT ***/
 /*** MEDIA QUERIES***/
+/*** MIXIN FLEX***/
 /*** MIXIN MEDIA QUERIES***/
 /*** MIXIN BOX-SAHDOW***/
 /*@import "./utils/functions";
@@ -205,6 +206,7 @@ body {
 .restaurant__container {
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
 }
 
 .card {
@@ -212,6 +214,7 @@ body {
   flex-direction: column;
   border-radius: 17px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
 }
 .card__img {
   display: flex;
@@ -219,15 +222,18 @@ body {
 }
 .card__img > img {
   width: 100%;
+  object-fit: cover;
   border-radius: 17px 17px 0 0;
 }
 .card__label {
   position: absolute;
-  left: 274px;
+  left: 287px;
   bottom: -134px;
-  padding: 10px;
+  padding: 8px 13px;
   border-radius: 2px;
+  color: #008766;
   background-color: #99E2D0;
+  font-weight: bold;
 }
 .card__content {
   display: flex;
@@ -248,6 +254,7 @@ body {
 }
 .card__icon > i {
   font-size: 1.5rem;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
