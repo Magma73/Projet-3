@@ -203,7 +203,7 @@ body{
     &__container{
         display: flex;
         flex-direction: column;
-        padding:10px 0;
+        padding:12px 0;
     }
 }
 .card{
@@ -211,7 +211,7 @@ body{
     flex-direction: column;
     border-radius: 17px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0,0.15);
-    padding:8px 0;
+    margin:13px 0;
     &__img{
         display:flex;
         flex-direction: column; 
@@ -223,8 +223,8 @@ body{
     }
     &__label{
         position:absolute;
-        left: 287px;
-        bottom: -134px;
+        left: 249px;
+        bottom: -153px;
         padding:8px 13px;
         border-radius:2px;
         color:$color-third-dark;
