@@ -224,6 +224,8 @@ body {
   width: 100%;
   object-fit: cover;
   border-radius: 17px 17px 0 0;
+  max-height: 177px;
+  object-position: 50% 65%;
 }
 .card__label {
   position: absolute;
