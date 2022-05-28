@@ -50,7 +50,7 @@ body{
         flex-direction: row;
     }
 
-    &__image{
+    &__img{
         width:100%;
         background-color: $color-white;
         box-shadow:  0px 0px 10px 0px $color-shadow;
@@ -189,6 +189,63 @@ body{
         justify-content: center;
         > i{
             color:$color-bg-icon;
+        }
+    }
+}
+
+/**** SECTION 3 : "RESTAURANTS" ***/
+
+.restaurant{
+    display:flex;
+    flex-direction: column;
+    padding:40px 20px;
+    background-color:$color-bg-light;
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    border-radius: 17px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0,0.15);
+    &__img{
+        display:flex;
+        flex-direction: column; 
+        > img{
+            width:100%;
+            // object-fit: cover;
+            border-radius: 17px 17px 0 0;
+        } 
+    }
+    &__label{
+        position:absolute;
+        left: 274px;
+        bottom: -134px;
+        padding:10px;
+        border-radius:2px;
+        background-color: $color-third;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding:15px 17px;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+    }
+    &__icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > i{
+            font-size: 1.5rem;
         }
     }
 }
