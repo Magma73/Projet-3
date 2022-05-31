@@ -6,17 +6,7 @@
 /*** MIXIN MEDIA QUERIES***/
 /*** MIXIN BOX-SAHDOW***/
 /*@import "./utils/functions";
-@import "./utils/extensions";
-@import "./base/base";
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";*/
+@import "./utils/extensions";*/
 /* Initialization reset*/
 * {
   margin: 0;
@@ -48,6 +38,18 @@ a {
 ul {
   margin: 0;
   padding: 0;
+}
+
+/*@import "./base/typography";*/
+/**** SECTION 1 : "RÉSERVATION" ***/
+.btn-main {
+  padding: 15px 20px;
+  font-weight: 400;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /**** HEADER ***/
@@ -96,6 +98,7 @@ ul {
   }
 }
 
+/**** HEADER ***/
 .form {
   width: 100%;
   max-width: 168px;
@@ -120,45 +123,7 @@ ul {
   opacity: 1;
 }
 
-/**** SECTION 1 : "RÉSERVATION" ***/
-.reserve {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 40px;
-  text-align: center;
-  background-color: #f6f6f6;
-}
-.reserve__byline {
-  font-weight: lighter;
-  font-size: 18px;
-}
-.reserve__button {
-  padding: 20px 0;
-}
-
-.btn-main {
-  padding: 15px 20px;
-  font-weight: 400;
-  border-radius: 30px;
-  border: none;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-}
-
 /**** SECTION 2 : "FONCTIONNEMENT" ***/
-.menu {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 20px;
-}
-@media (min-width: 768px) {
-  .menu {
-    align-items: center;
-  }
-}
-
 .nav {
   display: flex;
   flex-direction: column;
@@ -213,30 +178,6 @@ ul {
 }
 
 /**** SECTION 3 : "RESTAURANTS" ***/
-.restaurant {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 20px;
-  background-color: #f6f6f6;
-}
-@media (min-width: 992px) {
-  .restaurant {
-    padding: 50px 40px;
-  }
-}
-.restaurant__container {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0;
-}
-@media (min-width: 768px) {
-  .restaurant__container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -370,6 +311,61 @@ ul {
 .footer__icon {
   font-size: 0.8rem;
   padding-right: 8px;
+}
+
+/*@import "./layouts/container";*/
+/**** SECTION 1 : "RÉSERVATION" ***/
+.reserve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.reserve__byline {
+  font-weight: lighter;
+  font-size: 18px;
+}
+.reserve__button {
+  padding: 20px 0;
+}
+
+/**** SECTION 2 : "FONCTIONNEMENT" ***/
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+@media (min-width: 768px) {
+  .menu {
+    align-items: center;
+  }
+}
+
+/**** SECTION 3 : "RESTAURANTS" ***/
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  background-color: #f6f6f6;
+}
+@media (min-width: 992px) {
+  .restaurant {
+    padding: 50px 40px;
+  }
+}
+.restaurant__container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+}
+@media (min-width: 768px) {
+  .restaurant__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
