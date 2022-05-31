@@ -42,7 +42,12 @@ body {
 /**** GLOBAL ***/
 a {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 /**** HEADER ***/
@@ -70,7 +75,6 @@ a {
 .header__img > a > img {
   width: 100%;
   max-width: 168px;
-  min-width: auto;
 }
 @media (min-width: 992px) {
   .header__img {
@@ -98,6 +102,12 @@ a {
   min-width: none;
   display: flex;
   flex-direction: row;
+}
+@media (min-width: 992px) {
+  .form {
+    max-width: none;
+    justify-content: end;
+  }
 }
 .form__field {
   border: none;
@@ -221,6 +231,11 @@ a {
     justify-content: space-around;
   }
 }
+.restaurant__container > a {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
 
 .card {
   display: flex;
@@ -237,8 +252,8 @@ a {
 }
 @media (min-width: 992px) {
   .card {
-    flex: 15%;
-    margin: 15px;
+    flex: 10%;
+    margin: 10px;
   }
 }
 .card__img {
@@ -255,6 +270,11 @@ a {
 @media (min-width: 768px) {
   .card__img > img {
     height: 177px;
+  }
+}
+@media (min-width: 992px) {
+  .card__img > img {
+    height: 150px;
   }
 }
 .card__label {
@@ -341,6 +361,9 @@ a {
   .footer__link {
     padding-left: 20px;
   }
+}
+.footer__link a {
+  color: white;
 }
 .footer__icon {
   font-size: 0.8rem;

@@ -37,11 +37,13 @@ body{
 
 /**** GLOBAL ***/
 a{
-    // display:flex;
     text-decoration: none;
-    color:$color-white;
+    color:$color-shadow;
 }
-
+ul{
+    margin:0;
+    padding:0;
+}
 
 
 /**** HEADER ***/
@@ -67,7 +69,6 @@ a{
         & > a > img{
             width:100%;
             max-width:168px;
-            min-width:auto;
         }
         @include desktop{
             flex:1;
@@ -94,7 +95,10 @@ a{
     min-width:none;
     display:flex;
     flex-direction:row;
-        
+    @include desktop{
+        max-width:none;
+        justify-content: end;
+    } 
     &__field{
         border: none;
         background-color: transparent;
@@ -214,6 +218,11 @@ a{
                 flex-wrap: wrap;
                 justify-content: space-around;
             }
+            & > a {
+                display:flex;
+                flex-direction: column;
+                flex: auto;
+            }
     }
 }
 .card{
@@ -227,8 +236,8 @@ a{
         margin:10px;
     }
     @include desktop{
-        flex:15%;
-        margin:15px;
+        flex:10%;
+        margin:10px;
     }
     &__img{
         display:flex;
@@ -241,6 +250,9 @@ a{
             object-position: 50% 65%;
             @include tablette{
                 height:177px;
+            }
+            @include desktop{
+                height:150px;
             }
         }
     }
@@ -317,6 +329,9 @@ a{
         padding:5px 0;
         @include desktop{
             padding-left: 20px;
+        }
+        & a {
+            color:$color-white;
         }
     }
     &__icon{
