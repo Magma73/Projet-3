@@ -1,0 +1,23 @@
+/**** HEADER ***/
+.form{
+    width:100%;
+    max-width:168px;
+    min-width:none;
+    display:flex;
+    flex-direction:row;
+    @include desktop{
+        max-width:none;
+        justify-content: end;
+    } 
+    &__field{
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+        padding-left:15px;
+
+        &::placeholder {
+            color: black;
+            opacity: 1;
+        }
+    }   
+}

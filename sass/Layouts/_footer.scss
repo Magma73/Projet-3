@@ -1,0 +1,51 @@
+/**** SECTION 4 : FOOTER ***/
+.footer{
+    display: flex;
+    flex-direction: column;
+    color:$color-white;
+    background-color: $color-bg-footer;
+    padding: 10px 20px;
+        @include tablette{
+            padding: 20px;
+        }
+        @include desktop{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        }
+    &__title{
+        padding:12px 0;
+        font-family:"Shrikhand";
+        font-weight: normal;
+        font-size: 20px;
+    }
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        @include tablette{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__link{
+        display:flex;
+        flex-direction:row;
+        padding:5px 0;
+        @include desktop{
+            padding-left: 20px;
+        }
+        & a {
+            color:$color-white;
+        }
+    }
+    &__icon{
+        font-size:0.8rem;
+        padding-right: 8px;
+    }
+}
