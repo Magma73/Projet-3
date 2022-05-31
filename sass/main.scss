@@ -221,11 +221,11 @@ ul{
                 flex-wrap: wrap;
                 justify-content: space-around;
             }
-            & > a {
-                display:flex;
-                flex-direction: column;
-                flex: auto;
-            }
+            // & > a {
+            //     display:flex;
+            //     flex-direction: column;
+            //     flex: auto;
+            // }
     }
 }
 .card{
@@ -261,9 +261,12 @@ ul{
     }
     &__label{
         position:absolute;
-        left: 249px;
-        bottom: -153px;
+        margin:10px;
+        // left: 249px;
+        // bottom: -153px;
         padding:8px 13px;
+        width:auto;
+        height:auto;
         border-radius:2px;
         color:$color-third-dark;
         background-color: $color-third;

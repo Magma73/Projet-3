@@ -236,11 +236,6 @@ ul {
     justify-content: space-around;
   }
 }
-.restaurant__container > a {
-  display: flex;
-  flex-direction: column;
-  flex: auto;
-}
 
 .card {
   display: flex;
@@ -284,9 +279,10 @@ ul {
 }
 .card__label {
   position: absolute;
-  left: 249px;
-  bottom: -153px;
+  margin: 10px;
   padding: 8px 13px;
+  width: auto;
+  height: auto;
   border-radius: 2px;
   color: #008766;
   background-color: #99E2D0;
