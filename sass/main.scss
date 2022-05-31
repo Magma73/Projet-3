@@ -209,6 +209,9 @@ ul{
     flex-direction: column;
     padding:40px 20px;
     background-color:$color-bg-light;
+    @include desktop{
+        padding: 50px 40px;
+    }
     &__container{
         display: flex;
         flex-direction: column;
@@ -303,6 +306,7 @@ ul{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 20px 40px;
         }
     &__title{
         padding:12px 0;

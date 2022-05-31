@@ -219,6 +219,11 @@ ul {
   padding: 40px 20px;
   background-color: #f6f6f6;
 }
+@media (min-width: 992px) {
+  .restaurant {
+    padding: 50px 40px;
+  }
+}
 .restaurant__container {
   display: flex;
   flex-direction: column;
@@ -327,6 +332,7 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 40px;
   }
 }
 .footer__title {
