@@ -94,8 +94,18 @@ ul {
   font-weight: 900;
   content: "\f060";
 }
+@media (min-width: 992px) {
+  .header__img--icon::before {
+    flex: none;
+  }
+}
 .header__img--icon > a {
   flex: 80%;
+}
+@media (min-width: 992px) {
+  .header__img--icon > a {
+    flex: none;
+  }
 }
 .header__location {
   width: 100%;
