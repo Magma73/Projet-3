@@ -391,4 +391,12 @@ ul {
   }
 }
 
+.container-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.container-restaurant__img > img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
