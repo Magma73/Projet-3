@@ -1,0 +1,9 @@
+.container-restaurant{
+    display: flex;
+    flex-direction: column;
+    &__img{
+        & > img{
+            width: 100%;
+        }
+    }
+}
