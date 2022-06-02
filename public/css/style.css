@@ -285,6 +285,7 @@ ul {
 }
 .card__price {
   align-self: end;
+  padding-right: 5px;
 }
 .card__price--dish {
   font-weight: bold;
@@ -326,6 +327,7 @@ ul {
 .menus__dish {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .menus__heading {
   position: relative;
@@ -340,6 +342,11 @@ ul {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
+}
+.menus__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /**** SECTION 4 : FOOTER ***/
