@@ -29,22 +29,33 @@
     &__img--icon{
         flex-direction: row;
         justify-content: center;
-        &::before{
-            flex:28%;
-            padding: 0px 10px;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f060";
-            @include desktop{
-                flex:none;
-            }
-        }
+        // &::before{
+        //     flex:28%;
+        //     padding: 0px 10px;
+        //     font-family: "Font Awesome 5 Free";
+        //     font-weight: 900;
+        //     content: "\f060";
+        //     @include desktop{
+        //         flex:none;
+        //     }
+        // }
         & > a {
             flex: 80%;
             @include desktop{
                 flex:none;
             }
         }
+    }
+    &__icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f060";
     }
     &__location{
         width:100%;

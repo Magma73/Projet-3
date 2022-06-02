@@ -87,18 +87,6 @@ ul {
   flex-direction: row;
   justify-content: center;
 }
-.header__img--icon::before {
-  flex: 28%;
-  padding: 0px 10px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f060";
-}
-@media (min-width: 992px) {
-  .header__img--icon::before {
-    flex: none;
-  }
-}
 .header__img--icon > a {
   flex: 80%;
 }
@@ -106,6 +94,17 @@ ul {
   .header__img--icon > a {
     flex: none;
   }
+}
+.header__icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header__icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
 }
 .header__location {
   width: 100%;
@@ -259,6 +258,13 @@ ul {
   align-items: center;
   padding: 15px 17px;
 }
+.card__content--dish {
+  margin: 20px 0;
+  padding: 12px;
+  border-radius: 13px;
+  background-color: white;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+}
 .card__body {
   display: flex;
   flex-direction: column;
@@ -272,6 +278,68 @@ ul {
 .card__icon > i {
   font-size: 1.5rem;
   margin: 5px;
+}
+.card__text--dish {
+  padding-top: 5px;
+  font-weight: 300;
+}
+.card__price {
+  align-self: end;
+}
+.card__price--dish {
+  font-weight: bold;
+}
+
+.container-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.container-restaurant__img > img {
+  width: 100%;
+}
+.container-restaurant__section {
+  position: relative;
+  bottom: 50px;
+  padding: 15px 20px;
+  border-radius: 39px 39px 0 0;
+  background-color: #f6f6f6;
+}
+.container-restaurant__heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-restaurant__title {
+  font-family: "Shrikhand";
+}
+.container-restaurant__icon {
+  font-size: 1.5rem;
+  padding-right: 20px;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.menus__dish {
+  display: flex;
+  flex-direction: column;
+}
+.menus__heading {
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+}
+.menus__heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 23px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
 }
 
 /**** SECTION 4 : FOOTER ***/
@@ -389,14 +457,6 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-}
-
-.container-restaurant {
-  display: flex;
-  flex-direction: column;
-}
-.container-restaurant__img > img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

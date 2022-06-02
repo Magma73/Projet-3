@@ -1,0 +1,23 @@
+.menus{
+    display:flex;
+    flex-direction: column;
+    padding:10px 0;
+    &__dish{
+        display:flex;
+        flex-direction: column;
+    }
+    &__heading{
+        position:relative;
+        font-weight: 300; 
+        font-size:16px;
+    }
+    &__heading::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 23px;
+        width: 40px;
+        height: 3px;
+        background-color: $color-third;
+    }
+}

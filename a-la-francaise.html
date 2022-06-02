@@ -29,7 +29,7 @@
 
     <header class="header">
         <div class="header__img header__img--icon">
-            <a href="index.html"><img src="./public/assets/images/logo/ohmyfood.png" alt="Logo OhMyFood"></a>
+            <a class="header__icon" href="index.html"><img src="./public/assets/images/logo/ohmyfood.png" alt="Logo OhMyFood"></a>
         </div>
     </header>
 
@@ -37,6 +37,7 @@
 
     <main>
 
+        <!-- SECTION : "À LA FRANÇAISE" -->
         <div class="container-restaurant">
             <div class="container-restaurant__img">
                 <img src="./public/assets/images/restaurants/a_la_francaise.jpg">
@@ -45,24 +46,28 @@
             <div class="container-restaurant__section">
                 <div class="container-restaurant__heading">
                     <h1 class="container-restaurant__title">À la française</h1>
-                    <span class="container-restaurant__icon"></span>
+                    <div class="container-restaurant__icon">
+                        <i class="far fa-heart"></i>
+                    </div>
                 </div>
 
                 <section class="menus">
-                    <h2 class="menus__heading">ENTRÉES</h2>
-                    <div class="menus__cards">
-                        <article class="card__content">
-                            <a href="#">
-                                <div class="card__body">
-                                    <h3 class="card__title">Tartare de poulpe acidulé</h3>
-                                    <p class="card__text">Aux zests d'orange</p>
-                                </div>
+                    <div class="menus__dish">
+                        <h2 class="menus__heading">ENTRÉES</h2>
+                        <div class="menus__cards">
+                            <article class="card__content card__content--dish">
+                                <!-- <a href="#"> -->
+                                    <div class="card__body card__body--dish">
+                                        <h3 class="card__title card__title--dish">Tartare de poulpe acidulé</h3>
+                                        <p class="card__text card__text--dish">Aux zests d'orange</p>
+                                    </div>
 
-                                <div class="">
-                                    <p class="card__price">25 €</p>
-                                </div>
-                            </a>
-                        </article>
+                                    <div class="card__price">
+                                        <p class="card__price--dish">25 €</p>
+                                    </div>
+                                <!-- </a> -->
+                            </article>
+                        </div>
                     </div>
                 </section>
 
