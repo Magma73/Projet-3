@@ -262,11 +262,21 @@ ul {
   padding: 15px 17px;
 }
 .card__content--dish {
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 12px;
   border-radius: 13px;
   background-color: white;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 768px) {
+  .card__content--dish {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .card__content--dish {
+    margin-right: unset;
+  }
 }
 .card__body {
   display: flex;
@@ -288,7 +298,7 @@ ul {
 }
 .card__price {
   align-self: end;
-  padding-right: 5px;
+  padding: 0 5px 0 5px;
 }
 .card__price--dish {
   font-weight: bold;
@@ -301,12 +311,26 @@ ul {
 .container-restaurant__img > img {
   width: 100%;
   max-height: 282px;
+  object-fit: cover;
 }
 .container-restaurant__section {
   margin-top: -50px;
-  padding: 15px 20px 40px 20px;
+  padding: 15px 20px 65px 20px;
   border-radius: 39px 39px 0 0;
   background-color: #f6f6f6;
+}
+@media (min-width: 992px) {
+  .container-restaurant__section {
+    max-width: 993px;
+    margin: auto;
+    margin-top: -50px;
+    padding: 20px 35px 65px 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-restaurant__section {
+    max-width: 1200px;
+  }
 }
 .container-restaurant__heading {
   display: flex;
@@ -327,10 +351,27 @@ ul {
   flex-direction: column;
   padding: 10px 0;
 }
+@media (min-width: 1200px) {
+  .menus {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+}
 .menus__dish {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .menus__dish {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .menus__dish:nth-child(3) {
+    margin-right: unset;
+  }
 }
 .menus__heading {
   position: relative;
@@ -345,6 +386,25 @@ ul {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
+}
+.menus__cards {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .menus__cards {
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .menus__cards {
+    flex-direction: column;
+    justify-content: unset;
+    flex-wrap: nowrap;
+  }
 }
 .menus__button {
   display: flex;
