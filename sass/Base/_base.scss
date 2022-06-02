@@ -13,7 +13,7 @@ body{
     font-family: 'Roboto', sans-serif;
     @include screenLarge{
         max-width:1920px;
-        margin:auto;
+        margin:auto!important;
     }
 }
 
