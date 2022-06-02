@@ -29,16 +29,6 @@
     &__img--icon{
         flex-direction: row;
         justify-content: center;
-        // &::before{
-        //     flex:28%;
-        //     padding: 0px 10px;
-        //     font-family: "Font Awesome 5 Free";
-        //     font-weight: 900;
-        //     content: "\f060";
-        //     @include desktop{
-        //         flex:none;
-        //     }
-        // }
         & > a {
             flex: 80%;
             @include desktop{
@@ -51,11 +41,14 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
     &__icon::before{
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         content: "\f060";
+        position: relative;
+        right: 78px;
     }
     &__location{
         width:100%;
