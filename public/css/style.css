@@ -300,11 +300,11 @@ ul {
 }
 .container-restaurant__img > img {
   width: 100%;
+  max-height: 282px;
 }
 .container-restaurant__section {
-  position: relative;
-  bottom: 50px;
-  padding: 15px 20px;
+  margin-top: -50px;
+  padding: 15px 20px 40px 20px;
   border-radius: 39px 39px 0 0;
   background-color: #f6f6f6;
 }
