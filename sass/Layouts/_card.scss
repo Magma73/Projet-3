@@ -16,6 +16,7 @@
     &__img{
         display:flex;
         flex-direction: column; 
+        position:relative;
         & > img{
             width:100%;
             object-fit: cover;
@@ -32,12 +33,9 @@
     }
     &__label{
         position:absolute;
-        margin:10px;
-        // left: 249px;
-        // bottom: -153px;
+        left: 335px;
+        top: 15px;
         padding:8px 13px;
-        width:auto;
-        height:auto;
         border-radius:2px;
         color:$color-third-dark;
         background-color: $color-third;
