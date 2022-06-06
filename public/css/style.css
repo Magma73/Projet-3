@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /***COLORS****/
+/***HOVER CURSOR****/
 /*** CONTENT ***/
 /*** MEDIA QUERIES***/
 /*** MIXIN FLEX***/
@@ -56,6 +57,7 @@ ul {
 .btn__main:hover {
   background: linear-gradient(#ff83dd, #985ede);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }
 
 /**** HEADERS ***/
@@ -198,7 +200,8 @@ ul {
   content: "3";
 }
 .nav__btn:hover {
-  background-color: rgba(147, 86, 220, 0.1);
+  background-color: rgba(147, 86, 220, 0.13);
+  cursor: pointer;
 }
 .nav__icon {
   width: 50px;
@@ -230,6 +233,9 @@ ul {
     flex: 10%;
     margin: 10px;
   }
+}
+.card:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .card__img {
   display: flex;
