@@ -1,0 +1,7 @@
+@function light($color1, $color2) {
+    $amount:2%;
+    $color1: lighten($color1, $amount);
+    $color2: lighten($color2, $amount);
+    $light: ( $color1, $color2);
+    @return $light;
+}

@@ -10,4 +10,8 @@
     &--padding{
         padding:15px 45px;
     }
+    &:hover{
+        background: linear-gradient(light( $color-secondary, $color-primary));
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+    }
 }

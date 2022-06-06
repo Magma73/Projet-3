@@ -5,8 +5,7 @@
 /*** MIXIN FLEX***/
 /*** MIXIN MEDIA QUERIES***/
 /*** MIXIN BOX-SAHDOW***/
-/*@import "./utils/functions";
-@import "./utils/extensions";*/
+/*@import "./utils/extensions";*/
 /* Initialization reset*/
 * {
   margin: 0;
@@ -53,6 +52,10 @@ ul {
 }
 .btn__main--padding {
   padding: 15px 45px;
+}
+.btn__main:hover {
+  background: linear-gradient(#ff83dd, #985ede);
+  box-shadow: 0px 2px 10px rgb(0, 0, 0);
 }
 
 /**** HEADERS ***/
@@ -228,6 +231,7 @@ ul {
 .card__img {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .card__img > img {
   width: 100%;
@@ -248,10 +252,9 @@ ul {
 }
 .card__label {
   position: absolute;
-  margin: 10px;
+  left: 335px;
+  top: 15px;
   padding: 8px 13px;
-  width: auto;
-  height: auto;
   border-radius: 2px;
   color: #008766;
   background-color: #99E2D0;
