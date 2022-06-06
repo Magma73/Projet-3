@@ -39,6 +39,9 @@
         &--number3::before{
             content:"3";
         }
+        &:hover{
+            background-color: rgba($color-primary, 0.1);
+        }
     }
     &__icon{
         width:50px;
