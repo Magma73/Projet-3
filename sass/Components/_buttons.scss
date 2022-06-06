@@ -12,6 +12,7 @@
     }
     &:hover{
         background: linear-gradient(light( $color-secondary, $color-primary));
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.87);
+        cursor: pointer;
     }
 }
