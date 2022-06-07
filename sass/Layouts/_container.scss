@@ -1,6 +1,13 @@
-.container-restaurant{
-    display: flex;
+.container{
+    display:flex;
     flex-direction: column;
+    &--all-restaurant{
+        padding:40px 20px;
+        background-color:$color-bg-light;
+        @include desktop{
+            padding: 50px 40px;
+        }
+    }
     &__img{
         & > img{
             width: 100%;
@@ -8,19 +15,23 @@
             object-fit: cover;
         }
     }
-    &__section{
-        margin-top: -50px;
-        padding: 15px 20px 65px 20px;
-        border-radius: 39px 39px 0 0;
-        background-color: $color-bg-light;
-        @include desktop{
-            max-width:993px;
-            margin:auto;
+    &__main{
+        display:flex;
+        flex-direction: column;
+        &--position{
             margin-top: -50px;
-            padding: 20px 35px 65px 35px;
-        }
-        @include screenLarge{
-            max-width:1200px;
+            padding: 15px 20px 65px 20px;
+            border-radius: 39px 39px 0 0;
+            background-color: $color-bg-light;
+            @include desktop{
+                max-width:993px;
+                margin:auto;
+                margin-top: -50px;
+                padding: 20px 35px 65px 35px;
+            }
+            @include screenLarge{
+                max-width:1200px;
+            }
         }
     }
     &__heading{
@@ -28,12 +39,76 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
-    &__title{
-        font-family: "Shrikhand";
+        & > h1{
+            font-family: "Shrikhand";
+            font-size:1.8rem;
+        }
     }
     &__icon{
-        font-size:1.5rem;
+        font-size:1.9rem;
         padding-right: 20px;
+    }
+    &__list{
+        display:flex;
+        flex-direction: column;
+        padding:10px 0;
+        @include screenLarge{
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px 0;
+        }
+    }
+    &__menu{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        @include screenLarge{
+            margin-right: 20px;
+            &:nth-child(3) {
+                    margin-right: unset;
+            }
+        }
+        &-title{
+            position:relative;
+            font-weight: 300; 
+            font-size:16px;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 23px;
+                width: 40px;
+                height: 3px;
+                background-color: $color-third;
+            }
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        padding:12px 0;
+        @include tablette{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &--menu{
+            margin: 10px 0;
+            @include tablette{
+                flex-direction: row;
+                justify-content: start;
+                flex-wrap: wrap;
+            }
+            @include screenLarge{
+                flex-direction: column;
+                justify-content: unset;
+                flex-wrap: nowrap;
+            }  
+        }
+    }
+    &__button{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

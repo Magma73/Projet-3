@@ -5,17 +5,28 @@
     border-radius: 17px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0,0.15);
     margin:13px 0;
-    @include tablette{
-        flex:33%;
-        margin:10px;
-    }
-    @include desktop{
-        flex:10%;
-        margin:10px;
-    }
+    background-color: $color-white;
     &:hover{
         box-shadow: 0px 3px 5px rgba(0, 0, 0,0.5);
     }
+    &--restaurant{
+        @include tablette{
+            flex:33%;
+            margin:10px;
+        }
+        @include desktop{
+            flex:10%;
+            margin:10px;
+        }
+    }
+    &--dish{
+        @include tablette{
+            margin-right: 15px;
+        }
+        @include screenLarge{
+            margin-right: unset;
+        }
+    }    
     &__img{
         display:flex;
         flex-direction: column; 
@@ -50,25 +61,6 @@
         justify-content: space-between;
         align-items:center;
         padding:15px 17px;
-        &--dish{
-            margin:10px 0;
-            padding:12px;
-            border-radius: 13px;
-            background-color:$color-white;
-            box-shadow: 0px 3px 5px rgba(0, 0, 0,0.15);
-            @include tablette{
-                margin-right: 15px;
-            }
-            // @include desktop{
-            //     margin-right: unset;
-            // }
-            @include screenLarge{
-                margin-right: unset;
-            }
-        }
-        // &:hover{
-        //     box-shadow: 0px 3px 5px rgba(0, 0, 0,0.7);
-        // }   
     }
     &__body{
         display: flex;

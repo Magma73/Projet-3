@@ -28,22 +28,22 @@
 }
 
 /**** SECTION 3 : "RESTAURANTS" ***/
-.restaurant{
-    display:flex;
-    flex-direction: column;
-    padding:40px 20px;
-    background-color:$color-bg-light;
-    @include desktop{
-        padding: 50px 40px;
-    }
-    &__container{
-        display: flex;
-        flex-direction: column;
-        padding:12px 0;
-            @include tablette{
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-    }
-}
+// .restaurant{
+//     display:flex;
+//     flex-direction: column;
+//     padding:40px 20px;
+//     background-color:$color-bg-light;
+//     @include desktop{
+//         padding: 50px 40px;
+//     }
+//     &__container{
+//         display: flex;
+//         flex-direction: column;
+//         padding:12px 0;
+//             @include tablette{
+//                 flex-direction: row;
+//                 flex-wrap: wrap;
+//                 justify-content: space-around;
+//             }
+//     }
+// }
