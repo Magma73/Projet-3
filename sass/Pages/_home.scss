@@ -1,3 +1,30 @@
+/**** LOADER SPINNER ***/
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index:3;
+    background-color: rgba($color-bg-footer, 0.8);
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: loader .01s both;
+    animation-delay: 2.99s;
+    &__item {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(#0000 10%, $color-primary);
+        -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 13px),#000 0);
+        animation: spinner-zp9dbg 3s linear both;
+    }
+}
+
+
+
 /**** SECTION 1 : "RÉSERVATION" ***/
 .reserve{
     display: flex;

@@ -3,12 +3,6 @@
  * ----------------------------------------
  */
 @keyframes loader{
-  0%{
-    opacity: 1;
-  }
-  50%{
-    opacity: 1;
-  }
   100%{
     opacity: 0;
     z-index:-10;
@@ -16,26 +10,10 @@
 }
 
 @keyframes spinner-zp9dbg {
-  // 0%{
-  //     transform: rotate(0turn);
-  //     opacity:0;
-
-  // }
-  // 50% {
-  //    transform: rotate(1turn);
-  //    opacity:1;
-  // }
-  // 100% {
-  //     transform: rotate(1turn);
-  //     opacity:0;
-  // }
   100% {
     transform: rotate(2turn);
   }
 }
-
-
-
 
 /** ----------------------------------------
  * Animation "PLATS" : animation fade-in-bottom
