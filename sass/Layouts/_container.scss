@@ -61,10 +61,7 @@
     &__menu{
         display:flex;
         flex-direction: column;
-        margin-bottom: 20px;
-        // animation: fade-in-top 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in-top 1s ease-out both;
-
+        margin-bottom: 20px;      
         @include screenLarge{
             margin-right: 20px;
             &:nth-child(3) {
@@ -97,6 +94,9 @@
         }
         &--menu{
             margin: 10px 0;
+            animation: fade-in-bottom 2s ease-in-out both;
+            //             animation: fade-in-bottom 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+
             @include tablette{
                 flex-direction: row;
                 justify-content: start;
