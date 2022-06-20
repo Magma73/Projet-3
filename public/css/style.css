@@ -15,6 +15,29 @@
   }
 }
 /** ----------------------------------------
+ * Animation Hearth
+ * ----------------------------------------
+ */
+@keyframes hearth-hover {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hearth-active {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/** ----------------------------------------
  * Animation "PLATS" : animation fade-in-bottom
  * ----------------------------------------
  */
@@ -23,6 +46,10 @@
     transform: translateY(50px);
     opacity: 0;
   }
+  75% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -30,6 +57,7 @@
 }
 /***COLORS****/
 /***HOVER CURSOR****/
+/**ANIMATION "PLATS"**/
 /*** CONTENT ***/
 /*** MEDIA QUERIES***/
 /*** MIXIN FLEX***/
@@ -452,6 +480,15 @@ ul {
   margin: 10px 0;
   animation: fade-in-bottom 2s ease-in-out both;
 }
+.container__card--menu--1 {
+  animation-delay: 333.3333333333ms;
+}
+.container__card--menu--2 {
+  animation-delay: 666.6666666667ms;
+}
+.container__card--menu--3 {
+  animation-delay: 1000ms;
+}
 @media (min-width: 768px) {
   .container__card--menu {
     flex-direction: row;
@@ -587,6 +624,28 @@ ul {
   .menu {
     align-items: center;
   }
+}
+
+.card__icon > i:hover {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hearth-hover 2s ease-in-out both;
+}
+.card__icon > i:active {
+  opacity: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hearth-active 0.5s ease-in-out both;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -96,7 +96,11 @@
             margin: 10px 0;
             animation: fade-in-bottom 2s ease-in-out both;
             //             animation: fade-in-bottom 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
-
+            @for $i from 1 through $nb-menus {
+                &--#{$i} {
+                    animation-delay: $anim-delay * $i;
+                 }
+            }
             @include tablette{
                 flex-direction: row;
                 justify-content: start;

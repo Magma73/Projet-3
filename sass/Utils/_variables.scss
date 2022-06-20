@@ -19,6 +19,12 @@ $color-bg-footer: #353535;
 /***HOVER CURSOR****/
 $cursor: pointer;
 
+/**ANIMATION "PLATS"**/
+$nb-menus:3;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $nb-menus;
+
+
 /*** CONTENT ***/
 
 // $contents: (
