@@ -18,23 +18,32 @@
  * Animation Hearth
  * ----------------------------------------
  */
-@keyframes hearth-hover {
+@keyframes hearth-stroke-change {
   0% {
     opacity: 0;
   }
-  75% {
-    opacity: 0.5;
-  }
   100% {
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity: 1;
   }
 }
-@keyframes hearth-active {
+@keyframes hearth-bg-change {
   0% {
-    transform: scale(0);
+    background-position: 50% 0%;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  50% {
+    background-position: 50% 50%;
   }
   100% {
-    transform: scale(1);
+    background-position: 50% 100%;
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 /** ----------------------------------------
@@ -353,10 +362,28 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin: 5px;
 }
 .card__icon > i {
   font-size: 1.5rem;
-  margin: 5px;
+}
+.card__icon:hover i.far:nth-child(1), .card__icon:active i.far:nth-child(1) {
+  overflow: hidden;
+  animation: hearth-stroke-change 0.5s ease-in-out 0.5s both;
+}
+.card__icon:hover ::after, .card__icon:active ::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  position: absolute;
+  left: 0;
+  background: linear-gradient(0deg, #9356DC 20%, #FF79DA 50%, white 50%, white 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hearth-bg-change 2s cubic-bezier(0.08, 0.82, 0.17, 1) -0.5s both;
 }
 .card__text--dish {
   padding-top: 5px;
@@ -624,28 +651,6 @@ ul {
   .menu {
     align-items: center;
   }
-}
-
-.card__icon > i:hover {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: hearth-hover 2s ease-in-out both;
-}
-.card__icon > i:active {
-  opacity: 1;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: hearth-active 0.5s ease-in-out both;
 }
 
 /*# sourceMappingURL=style.css.map */

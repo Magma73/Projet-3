@@ -8,12 +8,46 @@
     z-index:-10;
   }
 }
-
 @keyframes spinner-zp9dbg {
   100% {
     transform: rotate(2turn);
   }
 }
+/** ----------------------------------------
+ * Animation Hearth
+ * ----------------------------------------
+ */
+ @keyframes hearth-stroke-change{
+  0%{
+    opacity:0;
+    // -webkit-text-fill-color: transparent;
+  }
+  100%{
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+  }
+}
+@keyframes hearth-bg-change{
+  0% {
+  background-position: 50% 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  }
+  50% {
+  background-position: 50% 50%;
+  }
+  100% {
+  background-position: 50% 100%;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  }
+}
+
+
 
 /** ----------------------------------------
  * Animation "PLATS" : animation fade-in-bottom
@@ -23,6 +57,10 @@
   0% {
     transform: translateY(50px);
     opacity: 0;
+  }
+  75% {
+    transform: translateY(0);
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
