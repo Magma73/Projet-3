@@ -8,7 +8,6 @@
     @include desktop{
         flex-direction: row;
     }
-
     &__img{
         width:100%;
         background-color: $color-white;
@@ -26,29 +25,15 @@
             flex:1;
         }
     }
-    &__img--icon{
-        flex-direction: row;
-        justify-content: center;
-        & > a {
-            flex: 80%;
-            @include desktop{
-                flex:none;
-            }
-        }
-    }
-    &__icon{
+    &__link{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        position: relative;
-    }
-    &__icon::before{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f060";
-        position: relative;
-        right: 78px;
+        &--icon{
+            position:absolute;
+            left:20px;
+        }
     }
     &__location{
         width:100%;
