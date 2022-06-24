@@ -67,3 +67,38 @@
     opacity: 1;
   }
 }
+
+/** ----------------------------------------
+ * Animation Validation
+ * ----------------------------------------
+ */
+ @keyframes slide-left {
+  0% {
+    // transform: translateX(0);
+    transform: scaleX(0);   
+  }
+  100% {
+    // transform: translateX(-100px);
+    transform: scaleX(1);
+  }
+}
+
+@keyframes reduce-right {
+  0% {
+    // transform: translateX(0);
+    transform: scaleX(1);
+  }
+  100% {
+    // transform: translateX(-100px);
+    transform: scaleX(0); 
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

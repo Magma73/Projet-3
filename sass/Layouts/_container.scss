@@ -56,6 +56,7 @@
             & i.far:nth-child(1){
             overflow: hidden;
             animation:hearth-stroke-change 0.5s ease-in-out 0.5s both;
+            cursor:$cursor;
             }
             & ::after{
             font-family: "Font Awesome 5 Free";

@@ -64,6 +64,34 @@
     opacity: 1;
   }
 }
+/** ----------------------------------------
+ * Animation Validation
+ * ----------------------------------------
+ */
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes reduce-right {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /***COLORS****/
 /***HOVER CURSOR****/
 /**ANIMATION "PLATS"**/
@@ -304,6 +332,29 @@ ul {
     margin: 10px;
   }
 }
+.card--dish:hover .card__hidden {
+  width: 4rem;
+  height: 4.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 17px 17px 0;
+  background: #99E2D0;
+  transform-origin: right;
+  animation: slide-left 1s ease-in-out both;
+}
+.card--dish:hover .card__hidden > i {
+  animation: rotate360 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.card--dish:hover .card__body {
+  margin-right: -4rem;
+}
+.card--dish:hover .card__title, .card--dish:hover .card__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 @media (min-width: 768px) {
   .card--dish {
     margin-right: 15px;
@@ -351,11 +402,11 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 17px;
 }
 .card__body {
   display: flex;
   flex-direction: column;
+  padding: 15px 17px;
 }
 .card__icon {
   display: flex;
@@ -391,10 +442,17 @@ ul {
 }
 .card__price {
   align-self: end;
-  padding: 0 5px 0 5px;
+  padding: 15px 17px 15px 5px;
 }
 .card__price--dish {
   font-weight: bold;
+}
+.card__hidden {
+  display: none;
+}
+.card__hidden > i {
+  font-size: 1.2rem;
+  color: white;
 }
 
 .container {
@@ -460,6 +518,7 @@ ul {
 .container__icon:hover i.far:nth-child(1), .container__icon:active i.far:nth-child(1) {
   overflow: hidden;
   animation: hearth-stroke-change 0.5s ease-in-out 0.5s both;
+  cursor: pointer;
 }
 .container__icon:hover ::after, .container__icon:active ::after {
   font-family: "Font Awesome 5 Free";

@@ -20,6 +20,36 @@
         }
     }
     &--dish{
+        &:hover{
+            & .card__hidden{
+                width: 4rem;
+                height:4.7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 17px 17px 0;
+                background:$color-third;
+                transform-origin:right;
+                animation: slide-left 1s ease-in-out both;
+                & > i{
+                    animation:rotate360 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                }
+            }
+            & .card__body{
+                margin-right:-4rem;
+                // transform-origin:right;
+                // animation: reduce-right 1s ease-in-out both;
+            }
+            & .card__title, .card__text{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            // & .card__price{
+            //     margin-left: -4rem;
+            // }
+        }
         @include tablette{
             margin-right: 15px;
         }
@@ -60,11 +90,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items:center;
-        padding:15px 17px;
+        // padding:15px 17px;
     }
     &__body{
         display: flex;
         flex-direction: column;
+        padding:15px 17px;
     }
     &__icon{
         display: flex;
@@ -102,9 +133,17 @@
     }
     &__price{
         align-self: end;
-        padding: 0 5px 0 5px;
+        padding: 15px 17px 15px 5px;
         &--dish{
             font-weight: bold;
+        }
+    }
+    &__hidden{
+        display: none;
+        // padding:15px 17px;
+        & > i{
+            font-size: 1.2rem;
+            color: white;
         }
     }
 }
