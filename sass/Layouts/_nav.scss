@@ -42,6 +42,9 @@
         &:hover{
             background-color: rgba($color-primary, 0.13);
             cursor: $cursor;
+            & > span{
+                color:$color-primary;
+            }
         }
     }
     &__icon{
@@ -50,8 +53,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        > i{
-            color:$color-bg-icon;
-        }
+        color:$color-bg-icon;
+        // > i{
+        //     
+        // }
     }
 }
