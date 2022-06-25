@@ -49,27 +49,36 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size:1.9rem;
         padding-right: 20px;
         position:relative;
-        &:hover, &:active{
-            & i.far:nth-child(1){
-            overflow: hidden;
-            animation:hearth-stroke-change 0.5s ease-in-out 0.5s both;
-            cursor:$cursor;
-            }
-            & ::after{
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f004";
+        & > i{
+            font-size:1.9rem;
+            text-align:center;
+        }
+        & .one{
+            color:transparent;
+        }
+        & .two{
             position:absolute;
-            left:0;
-            background: linear-gradient(0deg, #9356DC 20%, #FF79DA 50%, white 50%, white 100%);
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation:hearth-bg-change 2s cubic-bezier(.08,.82,.17,1) -0.5s both;
+            top:50%;
+            left:50%;
+            padding-right: 20px;
+            transform: translate(-50%,-50%);
+            overflow:hidden;
+        }
+        &:hover , &:active{
+            .one{
+                font-weight: bold;
+                background:linear-gradient(90deg, #FF79DA, #9356DC);
+                background-size: 100% 200px;
+                background-repeat: no-repeat;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                animation: hearth-bg-change 1s ease-in-out both;
+            }
+            .two{
+                animation: hearth-stroke-change 1s ease-in-out both;
             }
         }
     }
