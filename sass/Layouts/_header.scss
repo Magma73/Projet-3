@@ -21,6 +21,15 @@
             width:100%;
             max-width:168px;
         }
+        &--menu{
+            flex-direction: row;
+            justify-content:center;
+            position:relative;
+            & a > i:nth-child(1){
+                position: absolute;
+                left:17px;
+            }
+        }
         @include desktop{
             flex:1;
         }
