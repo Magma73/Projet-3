@@ -20,30 +20,29 @@
  */
 @keyframes hearth-stroke-change {
   0% {
-    opacity: 0;
-  }
-  100% {
-    background: linear-gradient(#9356DC, #FF79DA);
+    background: black;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 1;
+  }
+  80% {
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 @keyframes hearth-bg-change {
   0% {
-    background-position: 50% 0%;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  50% {
-    background-position: 50% 50%;
+    background-position: 50% -40%;
   }
   100% {
-    background-position: 50% 100%;
-    background: linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    background-clip: text;
+    background-position: 50% 0%;
   }
 }
 /** ----------------------------------------
@@ -180,36 +179,29 @@ ul {
   width: 100%;
   max-width: 168px;
 }
+.header__img--menu {
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.header__img--menu a > i:nth-child(1) {
+  position: absolute;
+  left: 17px;
+}
 @media (min-width: 992px) {
   .header__img {
     flex: 1;
   }
 }
-.header__img--icon {
-  flex-direction: row;
-  justify-content: center;
-}
-.header__img--icon > a {
-  flex: 80%;
-}
-@media (min-width: 992px) {
-  .header__img--icon > a {
-    flex: none;
-  }
-}
-.header__icon {
+.header__link {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
-.header__icon::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f060";
-  position: relative;
-  right: 78px;
+.header__link--icon {
+  position: absolute;
+  left: 20px;
 }
 .header__location {
   width: 100%;
@@ -254,6 +246,7 @@ ul {
 .nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 20px 0px;
 }
 .nav__link {
@@ -297,14 +290,15 @@ ul {
   background-color: rgba(147, 86, 220, 0.13);
   cursor: pointer;
 }
+.nav__btn:hover > span {
+  color: #9356DC;
+}
 .nav__icon {
   width: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-.nav__icon > i {
   color: #7E7E7E;
 }
 
@@ -332,8 +326,19 @@ ul {
     margin: 10px;
   }
 }
+@media (min-width: 768px) {
+  .card--dish {
+    margin-right: 15px;
+    width: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  .card--dish {
+    margin-right: unset;
+  }
+}
 .card--dish:hover .card__hidden {
-  width: 4rem;
+  width: 50px;
   height: 4.7rem;
   display: flex;
   flex-direction: column;
@@ -341,29 +346,9 @@ ul {
   justify-content: center;
   border-radius: 0 17px 17px 0;
   background: #99E2D0;
-  transform-origin: right;
-  animation: slide-left 1s ease-in-out both;
 }
 .card--dish:hover .card__hidden > i {
   animation: rotate360 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-.card--dish:hover .card__body {
-  margin-right: -4rem;
-}
-.card--dish:hover .card__title, .card--dish:hover .card__text {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-@media (min-width: 768px) {
-  .card--dish {
-    margin-right: 15px;
-  }
-}
-@media (min-width: 1200px) {
-  .card--dish {
-    margin-right: unset;
-  }
 }
 .card__img {
   display: flex;
@@ -407,6 +392,10 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 15px 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 80%;
 }
 .card__icon {
   display: flex;
@@ -414,41 +403,59 @@ ul {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 5px;
+  margin: 17px;
 }
 .card__icon > i {
   font-size: 1.5rem;
 }
-.card__icon:hover i.far:nth-child(1), .card__icon:active i.far:nth-child(1) {
-  overflow: hidden;
-  animation: hearth-stroke-change 0.5s ease-in-out 0.5s both;
+.card__icon .one {
+  color: transparent;
 }
-.card__icon:hover ::after, .card__icon:active ::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
+.card__icon .two {
   position: absolute;
-  left: 0;
-  background: linear-gradient(0deg, #9356DC 20%, #FF79DA 50%, white 50%, white 100%);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.card__icon:hover .one, .card__icon:active .one {
+  font-weight: bold;
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hearth-bg-change 2s cubic-bezier(0.08, 0.82, 0.17, 1) -0.5s both;
+  -webkit-background-clip: text;
+  animation: hearth-bg-change 1s ease-in-out both;
+}
+.card__icon:hover .two, .card__icon:active .two {
+  animation: hearth-stroke-change 1s ease-in-out both;
+}
+.card__title--dish {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card__text--dish {
   padding-top: 5px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card__price {
   align-self: end;
   padding: 15px 17px 15px 5px;
+  white-space: nowrap;
+  flex: 20%;
 }
 .card__price--dish {
   font-weight: bold;
 }
 .card__hidden {
-  display: none;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
 }
 .card__hidden > i {
   font-size: 1.2rem;
@@ -511,27 +518,36 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.9rem;
   padding-right: 20px;
   position: relative;
 }
-.container__icon:hover i.far:nth-child(1), .container__icon:active i.far:nth-child(1) {
-  overflow: hidden;
-  animation: hearth-stroke-change 0.5s ease-in-out 0.5s both;
-  cursor: pointer;
+.container__icon > i {
+  font-size: 1.9rem;
+  text-align: center;
 }
-.container__icon:hover ::after, .container__icon:active ::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
+.container__icon .one {
+  color: transparent;
+}
+.container__icon .two {
   position: absolute;
-  left: 0;
-  background: linear-gradient(0deg, #9356DC 20%, #FF79DA 50%, white 50%, white 100%);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
+  top: 50%;
+  left: 50%;
+  padding-right: 20px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.container__icon:hover .one, .container__icon:active .one {
+  font-weight: bold;
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hearth-bg-change 2s cubic-bezier(0.08, 0.82, 0.17, 1) -0.5s both;
+  -webkit-background-clip: text;
+  animation: hearth-bg-change 1s ease-in-out both;
+}
+.container__icon:hover .two, .container__icon:active .two {
+  animation: hearth-stroke-change 1s ease-in-out both;
 }
 .container__list {
   display: flex;

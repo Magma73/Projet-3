@@ -20,19 +20,18 @@
         }
     }
     &--dish{
-        max-width: 100%;
+        // width:100%;
         @include tablette{
             margin-right: 15px;
-            max-width: 360px;
+            width:350px;
         }
         @include screenLarge{
-
             margin-right: unset;
         }
         &:hover{
             & .card__hidden{
                 width: 50px;
-                height:4.5rem;
+                height:4.7rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -45,22 +44,6 @@
                     animation:rotate360 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 }
             }
-            & .card__body{
-                // margin-right:-4rem;
-                // transform-origin:right;
-                // animation: reduce-right 1s ease-in-out both;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            & .card__title, .card__text{
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            // & .card__price{
-            //     margin-left: -4rem;
-            // }
         }
     }    
     &__img{
@@ -102,7 +85,10 @@
         display: flex;
         flex-direction: column;
         padding:15px 17px;
-
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        flex:80%;
     }
     &__icon{
         display: flex;
@@ -141,13 +127,23 @@
             }
         }
     }
+    &__title--dish{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
     &__text--dish{
         padding-top:5px;
         font-weight:300;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     &__price{
         align-self: end;
         padding: 15px 17px 15px 5px;
+        white-space: nowrap;
+        flex:20%;
         &--dish{
             font-weight: bold;
         }
