@@ -1,4 +1,12 @@
-
+/*** MIXIN FLEX***/
+@mixin flexColumn{
+    display:flex;
+    flex-direction: column;
+}
+@mixin flexRow{
+    display:flex;
+    flex-direction: row;
+}
 
 /*** MIXIN MEDIA QUERIES***/
 @mixin desktop {
@@ -16,4 +24,3 @@
         @content;
     }
 }
-
