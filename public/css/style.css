@@ -98,7 +98,6 @@
 /*** MEDIA QUERIES***/
 /*** MIXIN FLEX***/
 /*** MIXIN MEDIA QUERIES***/
-/*** MIXIN BOX-SAHDOW***/
 /*@import "./utils/extensions";*/
 /* Initialization reset*/
 * {
@@ -395,7 +394,7 @@ ul {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  flex: 80%;
+  flex: 88%;
 }
 .card__icon {
   display: flex;
@@ -447,7 +446,7 @@ ul {
   align-self: end;
   padding: 15px 17px 15px 5px;
   white-space: nowrap;
-  flex: 20%;
+  flex: 12%;
 }
 .card__price--dish {
   font-weight: bold;
@@ -511,7 +510,13 @@ ul {
 }
 .container__heading > h1 {
   font-family: "Shrikhand";
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .container__heading > h1 {
+    font-size: 1.8rem;
+  }
 }
 .container__icon {
   display: flex;
