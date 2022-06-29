@@ -30,13 +30,6 @@
         &:hover{
             & .card__hidden{
                 width: 75px;
-                height:4.7rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                border-radius: 0 17px 17px 0;
-                background:$color-third;
                 & > i{
                     animation:rotate360 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 }
@@ -145,6 +138,13 @@
     }
     &__hidden{
         width:0;
+        height:4.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 17px 17px 0;
+        background:$color-third;
         overflow: hidden;
         transition:width 0.3s ease-in-out;
         & > i{

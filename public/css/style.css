@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /** ----------------------------------------
- * Animation Loader Spinner
- * ----------------------------------------
- */
+* Animation Loader Spinner
+* ----------------------------------------
+*/
 @keyframes loader {
   100% {
     opacity: 0;
@@ -15,9 +15,9 @@
   }
 }
 /** ----------------------------------------
- * Animation Hearth
- * ----------------------------------------
- */
+* Animation Hearth
+* ----------------------------------------
+*/
 @keyframes hearth-stroke-change {
   0% {
     background: black;
@@ -46,9 +46,9 @@
   }
 }
 /** ----------------------------------------
- * Animation "PLATS" : animation fade-in-bottom
- * ----------------------------------------
- */
+* Animation "PLATS" : animation fade-in-bottom
+* ----------------------------------------
+*/
 @keyframes fade-in-bottom {
   0% {
     transform: translateY(50px);
@@ -64,25 +64,9 @@
   }
 }
 /** ----------------------------------------
- * Animation Validation
- * ----------------------------------------
- */
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes reduce-right {
-  0% {
-    transform: scaleX(1);
-  }
-  100% {
-    transform: scaleX(0);
-  }
-}
+* Animation Validation
+* ----------------------------------------
+*/
 @keyframes rotate360 {
   0% {
     transform: rotate(0);
@@ -94,7 +78,6 @@
 /***COLORS****/
 /***HOVER CURSOR****/
 /**ANIMATION "PLATS"**/
-/*** CONTENT ***/
 /*** MEDIA QUERIES***/
 /*** MIXIN FLEX***/
 /*** MIXIN MEDIA QUERIES***/
@@ -337,14 +320,7 @@ ul {
   }
 }
 .card--dish:hover .card__hidden {
-  width: 50px;
-  height: 4.7rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0 17px 17px 0;
-  background: #99E2D0;
+  width: 75px;
 }
 .card--dish:hover .card__hidden > i {
   animation: rotate360 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -453,6 +429,13 @@ ul {
 }
 .card__hidden {
   width: 0;
+  height: 4.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 17px 17px 0;
+  background: #99E2D0;
   overflow: hidden;
   transition: width 0.3s ease-in-out;
 }
