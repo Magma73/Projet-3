@@ -1,7 +1,7 @@
 /** ----------------------------------------
- * Animation Loader Spinner
- * ----------------------------------------
- */
+* Animation Loader Spinner
+* ----------------------------------------
+*/
 @keyframes loader{
   100%{
     opacity: 0;
@@ -14,10 +14,10 @@
   }
 }
 /** ----------------------------------------
- * Animation Hearth
- * ----------------------------------------
- */
- @keyframes hearth-stroke-change{
+* Animation Hearth
+* ----------------------------------------
+*/
+@keyframes hearth-stroke-change{
   0%{
     background: black;
     -webkit-background-clip: text;
@@ -34,7 +34,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    // opacity: 1;
   }
 }
 @keyframes hearth-bg-change{
@@ -45,13 +44,10 @@
     background-position:50% 0%;
   }
 }
-
-
-
 /** ----------------------------------------
- * Animation "PLATS" : animation fade-in-bottom
- * ----------------------------------------
- */
+* Animation "PLATS" : animation fade-in-bottom
+* ----------------------------------------
+*/
 @keyframes fade-in-bottom {
   0% {
     transform: translateY(50px);
@@ -66,33 +62,10 @@
     opacity: 1;
   }
 }
-
 /** ----------------------------------------
- * Animation Validation
- * ----------------------------------------
- */
- @keyframes slide-left {
-  0% {
-    // transform: translateX(0);
-    transform: scaleX(0);   
-  }
-  100% {
-    // transform: translateX(-100px);
-    transform: scaleX(1);
-  }
-}
-
-@keyframes reduce-right {
-  0% {
-    // transform: translateX(0);
-    transform: scaleX(1);
-  }
-  100% {
-    // transform: translateX(-100px);
-    transform: scaleX(0); 
-  }
-}
-
+* Animation Validation
+* ----------------------------------------
+*/
 @keyframes rotate360 {
   0% {
     transform: rotate(0);

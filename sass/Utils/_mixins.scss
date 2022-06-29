@@ -7,7 +7,6 @@
     display:flex;
     flex-direction: row;
 }
-
 /*** MIXIN MEDIA QUERIES***/
 @mixin desktop {
     @media (min-width: map-get($breakpoints, desktop)){

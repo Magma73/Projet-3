@@ -1,5 +1,4 @@
 /***COLORS****/
-
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-third: #99E2D0;
@@ -10,7 +9,6 @@ $color-bg-header: #EAEAEA;
 $color-bg-light:#f6f6f6;
 
 $color-bg-icon:#7E7E7E;
-
 
 $color-third-dark:#008766;
 
@@ -23,30 +21,6 @@ $cursor: pointer;
 $nb-menus:3;
 $anim-dur: 1000ms;
 $anim-delay: $anim-dur / $nb-menus;
-
-
-/*** CONTENT ***/
-
-// $contents: (
-//     content1:"1",
-//     content2: "2",
-//     content3:"3"
-// );
-
-
-// @each $content, $number in $contents {
-//     .nav__btn::before--#{$content} {
-//         content:$number;
-//         font-size:0.9em;
-//         font-weight:400;
-//         position:relative;
-//         right:30px;
-//         padding:3px 7px;
-//         border-radius:50%;
-//         background-color:$color-primary;
-//         color:$color-white;
-//     }
-// }
 
 
 /*** MEDIA QUERIES***/
