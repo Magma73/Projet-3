@@ -81,7 +81,6 @@
 /*** MEDIA QUERIES***/
 /*** MIXIN FLEX***/
 /*** MIXIN MEDIA QUERIES***/
-/*@import "./utils/extensions";*/
 /* Initialization reset*/
 * {
   margin: 0;
@@ -115,7 +114,6 @@ ul {
   padding: 0;
 }
 
-/*@import "./base/typography";*/
 /**** SECTION 1 : "RÉSERVATION" ***/
 .btn__main {
   padding: 15px 20px;
@@ -319,10 +317,10 @@ ul {
     margin-right: unset;
   }
 }
-.card--dish:hover .card__hidden {
+.card--dish:hover .card__hidden, .card--dish:active .card__hidden {
   width: 75px;
 }
-.card--dish:hover .card__hidden > i {
+.card--dish:hover .card__hidden > i, .card--dish:active .card__hidden > i {
   animation: rotate360 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .card__img {
@@ -362,6 +360,8 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-radius: 0 17px 17px 0;
+  overflow: hidden;
 }
 .card__body {
   display: flex;
@@ -410,6 +410,12 @@ ul {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .card__title--dish {
+    font-size: 1.1rem;
+  }
 }
 .card__text--dish {
   padding-top: 5px;
@@ -429,14 +435,14 @@ ul {
 }
 .card__hidden {
   width: 0;
-  height: 4.7rem;
+  height: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 0 17px 17px 0;
   background: #99E2D0;
   overflow: hidden;
+  white-space: nowrap;
   transition: width 0.3s ease-in-out;
 }
 .card__hidden > i {
@@ -589,6 +595,7 @@ ul {
   }
 }
 .container__card--menu {
+  height: 325px;
   margin: 10px 0;
   animation: fade-in-bottom 2s ease-in-out both;
 }
@@ -683,7 +690,6 @@ ul {
   padding-right: 8px;
 }
 
-/*@import "./layouts/container";*/
 /**** LOADER SPINNER ***/
 .loader {
   position: fixed;

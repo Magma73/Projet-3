@@ -27,7 +27,7 @@
         @include screenLarge{
             margin-right: unset;
         }
-        &:hover{
+        &:hover , &:active{
             & .card__hidden{
                 width: 75px;
                 & > i{
@@ -69,6 +69,8 @@
         flex-direction: row;
         justify-content: space-between;
         align-items:center;
+        border-radius: 0 17px 17px 0;
+        overflow: hidden;
     }
     &__body{
         display: flex;
@@ -119,6 +121,10 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        font-size: 1rem;
+        @include tablette{
+            font-size: 1.1rem;
+        }
     }
     &__text--dish{
         padding-top:5px;
@@ -138,14 +144,14 @@
     }
     &__hidden{
         width:0;
-        height:4.7rem;
+        height:75px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border-radius: 0 17px 17px 0;
         background:$color-third;
         overflow: hidden;
+        white-space: nowrap;
         transition:width 0.3s ease-in-out;
         & > i{
             font-size: 1.2rem;
