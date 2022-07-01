@@ -368,8 +368,6 @@ ul {
   flex-direction: column;
   padding: 15px 17px;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   flex: 88%;
 }
 .card__icon {
@@ -595,7 +593,6 @@ ul {
   }
 }
 .container__card--menu {
-  height: 325px;
   margin: 10px 0;
   animation: fade-in-bottom 2s ease-in-out both;
 }
