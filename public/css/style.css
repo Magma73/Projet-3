@@ -138,6 +138,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #EAEAEA;
 }
 @media (min-width: 992px) {
@@ -153,6 +154,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 20px 10px 5px 10px;
 }
 .header__img > a > img {
@@ -160,7 +162,9 @@ ul {
   max-width: 168px;
 }
 .header__img--menu {
+  display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   position: relative;
 }
@@ -189,6 +193,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 @media (min-width: 992px) {
   .header__location {
@@ -227,6 +232,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 20px 0px;
 }
 .nav__link {
@@ -236,6 +242,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 360px;
   border: none;
@@ -493,6 +500,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
 }
 .container__heading > h1 {
@@ -623,6 +631,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 /**** SECTION 4 : FOOTER ***/
@@ -717,6 +726,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 20px 40px;
   text-align: center;
   background-color: #f6f6f6;

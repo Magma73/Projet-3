@@ -1,16 +1,12 @@
 /**** SECTION 2 : "FONCTIONNEMENT" ***/
 .nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexColumnCenter;
     padding:20px 0px;
     &__link{
         list-style: none;
     }
     &__btn{
-        display: flex;
-        flex-direction: row;
-        align-items:center;
+        @include flexRowCenter;
         width:100%;
         max-width:360px;
         border:none;
@@ -50,10 +46,7 @@
     }
     &__icon{
         width:50px;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include flexRowCenter;
         color:$color-bg-icon;
     }
 }
