@@ -21,7 +21,7 @@
     }
     &--dish{
         @include tablette{
-            margin-right: 15px;
+            margin-right: 13px;
             width:350px;
         }
         @include screenLarge{
