@@ -15,6 +15,10 @@
             margin:10px;
         }
         @include desktop{
+            flex:42%;
+            margin:10px;
+        }
+        @include screenLarge{
             flex:10%;
             margin:10px;
         }
